@@ -16,6 +16,7 @@ BuildRequires:	autoconf >= 2.61
 BuildRequires:	automake
 BuildRequires:	geos-devel >= 3.5.0
 BuildRequires:	libtool
+Requires:	geos >= 3.5.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -33,6 +34,7 @@ Summary:	Header files for RT Topology library
 Summary(pl.UTF-8):	Pliki nagłówkowe biblioteki RT Topology
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
+Requires:	geos-devel >= 3.5.0
 
 %description devel
 Header files for RT Topology library.
